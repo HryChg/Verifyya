@@ -11,13 +11,13 @@ import Firebase
 class VaccineManager {
     private let db = Firestore.firestore()
     private let recordConstants = K.FStore.VaccineRecord.self
-
+    
     static let shared = VaccineManager()
     private init() {}
     
     func createVaccine(completionHandler: @escaping (Result<String,Error>)->Void) {
         let newRecord = VaccineRecord(vaccinationLocation: "West End, Vancouver", vaccineKind: "Pfizer")
-        db.collection(recordConstants.collectionName).addDocument(data: [
+        db.collection(recordConstants.collectionName).document(newRecord.serialNum).setData([
             recordConstants.serialNum: newRecord.serialNum,
             recordConstants.hadSecondDose: newRecord.hadSecondDose,
             recordConstants.vaccinationLocation: newRecord.vaccinationLocation,
@@ -32,17 +32,11 @@ class VaccineManager {
     }
     
     func getVaccine(at serialNum: String, completetionHandler: @escaping (Result<VaccineRecord,Error>)->Void ) {
-        let recordsRef = db.collection(recordConstants.collectionName)
-        let query = recordsRef.whereField(recordConstants.serialNum, isEqualTo: serialNum)
-        query.getDocuments { (querySnapShot, error) in
-            if let e = error {
-                completetionHandler(.failure(e))
-            } else {
-                guard querySnapShot?.documents.count == 1 else {
-                    fatalError("Duplciat Vaccine Records Found")
-                }
-                let data = querySnapShot!.documents[0].data()
-                if let serialNum  = data[self.recordConstants.serialNum] as? String,
+        let docRef = db.collection(recordConstants.collectionName).document(serialNum)
+        docRef.getDocument { (document, error) in
+            if let document = document, document.exists {
+                if let data = document.data(),
+                   let serialNum  = data[self.recordConstants.serialNum] as? String,
                    let hadSecondDose = data[self.recordConstants.hadSecondDose] as? Bool,
                    let vaccinationLocation = data[self.recordConstants.vaccinationLocation] as? String,
                    let vaccinKind = data[self.recordConstants.vaccineKind] as? String {
@@ -51,15 +45,30 @@ class VaccineManager {
                                                   vaccinationLocation: vaccinationLocation,
                                                   vaccineKind: vaccinKind)
                     completetionHandler(.success(newRecord))
+                    return
                 }
             }
+            completetionHandler(.failure(NotFoundError(title: nil, description: "Vaccine Record Not Found")))
         }
     }
     
-    // TODO Update on whether a vaccine has has its second dose
-    // https://firebase.google.com/docs/firestore/manage-data/transactions
-    func updateVaccine(at serialNum: String, withSecondDose hadSecondDose: Bool) {
-        
+    func updateVaccine(at serialNum: String, withSecondDose hadSecondDose: Bool, completionHandler: @escaping (Result<Bool, Error>)->Void) {
+        getVaccine(at: serialNum) { (result) in
+            guard case .success(_) = result else {
+                completionHandler(.failure(NotFoundError(title: nil, description: "Vaccine Record Not Found")))
+                return
+            }
+            let docRef = self.db.collection(self.recordConstants.collectionName).document(serialNum)
+            docRef.setData([
+                self.recordConstants.hadSecondDose: hadSecondDose
+            ], merge: true){ err in
+                if let err = err {
+                    completionHandler(.failure(err))
+                } else {
+                    completionHandler(.success(true))
+                }
+            }
+        }
     }
     
     // Not going to have Delete

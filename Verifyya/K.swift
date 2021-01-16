@@ -10,6 +10,7 @@ struct K {
         struct Person {
             static let collectionName = "persons"
             static let email = "email"
+            static let serialNum = "serialNum"
             
         }
         
