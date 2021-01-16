@@ -21,6 +21,8 @@
 		96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC07925B29E7C005C8EE5 /* K.swift */; };
 		96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */; };
 		96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */; };
+		C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */; };
+		C4B10ED425B2FCB3006A69F0 /* QRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ED325B2FCB3006A69F0 /* QRManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		96ACC07925B29E7C005C8EE5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineRecord.swift; sourceTree = "<group>"; };
 		96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineManager.swift; sourceTree = "<group>"; };
+		C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
+		C4B10ED325B2FCB3006A69F0 /* QRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRManager.swift; sourceTree = "<group>"; };
 		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -135,6 +139,8 @@
 				96ACC05C25B29592005C8EE5 /* PersonManager.swift */,
 				96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */,
 				96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */,
+				C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */,
+				C4B10ED325B2FCB3006A69F0 /* QRManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,7 +322,9 @@
 				96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */,
 				96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */,
 				96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */,
+				C4B10ED425B2FCB3006A69F0 /* QRManager.swift in Sources */,
 				96ACC05D25B29592005C8EE5 /* PersonManager.swift in Sources */,
+				C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */,
 				9616C13025B26508009DF0D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
