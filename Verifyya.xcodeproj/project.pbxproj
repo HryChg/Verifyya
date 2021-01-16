@@ -15,8 +15,22 @@
 		9616C13725B2650D009DF0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9616C13625B2650D009DF0D8 /* Assets.xcassets */; };
 		9616C13A25B2650D009DF0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9616C13825B2650D009DF0D8 /* LaunchScreen.storyboard */; };
 		9616C14325B266B4009DF0D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9616C14225B266B4009DF0D8 /* GoogleService-Info.plist */; };
-		96ACC05A25B2886D005C8EE5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC05925B2886D005C8EE5 /* UserModel.swift */; };
+		96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC05925B2886D005C8EE5 /* Person.swift */; };
+		96ACC05D25B29592005C8EE5 /* PersonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC05C25B29592005C8EE5 /* PersonManager.swift */; };
+		96ACC07025B29C02005C8EE5 /* VerifyyaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC06F25B29C02005C8EE5 /* VerifyyaTests.swift */; };
+		96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC07925B29E7C005C8EE5 /* K.swift */; };
+		96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		96ACC07225B29C02005C8EE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9616C12225B26507009DF0D8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9616C12925B26508009DF0D8;
+			remoteInfo = Verifyya;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		323128DBCFBB89A4D884F2CC /* Pods-Verifyya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verifyya.release.xcconfig"; path = "Target Support Files/Pods-Verifyya/Pods-Verifyya.release.xcconfig"; sourceTree = "<group>"; };
@@ -30,7 +44,13 @@
 		9616C13925B2650D009DF0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9616C13B25B2650D009DF0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9616C14225B266B4009DF0D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		96ACC05925B2886D005C8EE5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		96ACC05925B2886D005C8EE5 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		96ACC05C25B29592005C8EE5 /* PersonManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonManager.swift; sourceTree = "<group>"; };
+		96ACC06D25B29C02005C8EE5 /* VerifyyaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VerifyyaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		96ACC06F25B29C02005C8EE5 /* VerifyyaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyyaTests.swift; sourceTree = "<group>"; };
+		96ACC07125B29C02005C8EE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96ACC07925B29E7C005C8EE5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineRecord.swift; sourceTree = "<group>"; };
 		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -43,6 +63,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96ACC06A25B29C02005C8EE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -50,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				9616C12C25B26508009DF0D8 /* Verifyya */,
+				96ACC06E25B29C02005C8EE5 /* VerifyyaTests */,
 				9616C12B25B26508009DF0D8 /* Products */,
 				BD3B35C7E0BD94B86E6DB9C2 /* Pods */,
 				CD3656CAAF779C7C5C9500B6 /* Frameworks */,
@@ -60,6 +88,7 @@
 			isa = PBXGroup;
 			children = (
 				9616C12A25B26508009DF0D8 /* Verifyya.app */,
+				96ACC06D25B29C02005C8EE5 /* VerifyyaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -75,6 +104,7 @@
 				96ACC05725B2882D005C8EE5 /* Views */,
 				9616C13625B2650D009DF0D8 /* Assets.xcassets */,
 				9616C13B25B2650D009DF0D8 /* Info.plist */,
+				96ACC07925B29E7C005C8EE5 /* K.swift */,
 			);
 			path = Verifyya;
 			sourceTree = "<group>";
@@ -99,9 +129,20 @@
 		96ACC05825B2883B005C8EE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				96ACC05925B2886D005C8EE5 /* UserModel.swift */,
+				96ACC05925B2886D005C8EE5 /* Person.swift */,
+				96ACC05C25B29592005C8EE5 /* PersonManager.swift */,
+				96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		96ACC06E25B29C02005C8EE5 /* VerifyyaTests */ = {
+			isa = PBXGroup;
+			children = (
+				96ACC06F25B29C02005C8EE5 /* VerifyyaTests.swift */,
+				96ACC07125B29C02005C8EE5 /* Info.plist */,
+			);
+			path = VerifyyaTests;
 			sourceTree = "<group>";
 		};
 		BD3B35C7E0BD94B86E6DB9C2 /* Pods */ = {
@@ -143,6 +184,24 @@
 			productReference = 9616C12A25B26508009DF0D8 /* Verifyya.app */;
 			productType = "com.apple.product-type.application";
 		};
+		96ACC06C25B29C02005C8EE5 /* VerifyyaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 96ACC07425B29C02005C8EE5 /* Build configuration list for PBXNativeTarget "VerifyyaTests" */;
+			buildPhases = (
+				96ACC06925B29C02005C8EE5 /* Sources */,
+				96ACC06A25B29C02005C8EE5 /* Frameworks */,
+				96ACC06B25B29C02005C8EE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				96ACC07325B29C02005C8EE5 /* PBXTargetDependency */,
+			);
+			name = VerifyyaTests;
+			productName = VerifyyaTests;
+			productReference = 96ACC06D25B29C02005C8EE5 /* VerifyyaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -154,6 +213,10 @@
 				TargetAttributes = {
 					9616C12925B26508009DF0D8 = {
 						CreatedOnToolsVersion = 12.3;
+					};
+					96ACC06C25B29C02005C8EE5 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 9616C12925B26508009DF0D8;
 					};
 				};
 			};
@@ -171,6 +234,7 @@
 			projectRoot = "";
 			targets = (
 				9616C12925B26508009DF0D8 /* Verifyya */,
+				96ACC06C25B29C02005C8EE5 /* VerifyyaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -184,6 +248,13 @@
 				9616C14325B266B4009DF0D8 /* GoogleService-Info.plist in Resources */,
 				9616C13725B2650D009DF0D8 /* Assets.xcassets in Resources */,
 				9616C13525B26508009DF0D8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		96ACC06B25B29C02005C8EE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,13 +308,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				9616C13225B26508009DF0D8 /* ViewController.swift in Sources */,
+				96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */,
 				9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */,
-				96ACC05A25B2886D005C8EE5 /* UserModel.swift in Sources */,
+				96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */,
+				96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */,
+				96ACC05D25B29592005C8EE5 /* PersonManager.swift in Sources */,
 				9616C13025B26508009DF0D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		96ACC06925B29C02005C8EE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96ACC07025B29C02005C8EE5 /* VerifyyaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		96ACC07325B29C02005C8EE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9616C12925B26508009DF0D8 /* Verifyya */;
+			targetProxy = 96ACC07225B29C02005C8EE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		9616C13325B26508009DF0D8 /* Main.storyboard */ = {
@@ -419,6 +509,46 @@
 			};
 			name = Release;
 		};
+		96ACC07525B29C02005C8EE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VerifyyaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VerifyyaTeam.VerifyyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verifyya.app/Verifyya";
+			};
+			name = Debug;
+		};
+		96ACC07625B29C02005C8EE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VerifyyaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.VerifyyaTeam.VerifyyaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Verifyya.app/Verifyya";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,6 +566,15 @@
 			buildConfigurations = (
 				9616C13F25B2650D009DF0D8 /* Debug */,
 				9616C14025B2650D009DF0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		96ACC07425B29C02005C8EE5 /* Build configuration list for PBXNativeTarget "VerifyyaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96ACC07525B29C02005C8EE5 /* Debug */,
+				96ACC07625B29C02005C8EE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
