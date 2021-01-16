@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct VaccineRecord {
+struct VaccineRecord: Codable {
     // Only create vaccine record after the first dose is done
     let serialNum: String
     var hadSecondDose: Bool
