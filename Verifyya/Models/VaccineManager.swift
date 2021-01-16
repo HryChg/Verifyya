@@ -11,6 +11,9 @@ import Firebase
 class VaccineManager {
     private let db = Firestore.firestore()
     private let recordConstants = K.FStore.VaccineRecord.self
+
+    static let shared = VaccineManager()
+    private init() {}
     
     func createVaccine(completionHandler: @escaping (Result<String,Error>)->Void) {
         let newRecord = VaccineRecord(vaccinationLocation: "West End, Vancouver", vaccineKind: "Pfizer")
@@ -23,7 +26,6 @@ class VaccineManager {
             if let e = error {
                 completionHandler(.failure(e))
             } else {
-                print("Successfully saved VaccineRecord.")
                 completionHandler(.success(newRecord.serialNum))
             }
         }

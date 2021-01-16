@@ -9,8 +9,8 @@ import UIKit
 import Firebase
 
 class ViewController: UIViewController {
-    let personManager = PersonManager()
-    let vaccineManager = VaccineManager()
+    let personManager = PersonManager.shared
+    let vaccineManager = VaccineManager.shared
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +32,12 @@ class ViewController: UIViewController {
 //                    }
 //                })
 //                self?.vaccineManager.createVaccine(completionHandler: { (result) in
-//
+//                    switch result {
+//                    case .success(_):
+//                        print("Successfully saved VaccineRecord.")
+//                    case .failure(let error):
+//                        print(error.localizedDescription)
+//                    }
 //                })
 //                self?.vaccineManager.getVaccine(at: "F274A944-C208-4EC7-9B1E-2CE09F187711", completetionHandler: { (result) in
 //                    switch result{

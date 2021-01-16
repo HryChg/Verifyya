@@ -12,6 +12,9 @@ class PersonManager {
     let db = Firestore.firestore()
     let personConstants = K.FStore.Person.self
     
+    static let shared = PersonManager()
+    private init() {}
+    
     func getPerson(with Email: String, completetionHandler: @escaping (Result<Person, Error>)->Void) {
         let personsRef = db.collection(personConstants.collectionName)
         let query = personsRef.whereField(personConstants.email, isEqualTo: Email)
