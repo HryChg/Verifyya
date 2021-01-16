@@ -10,6 +10,15 @@ struct K {
         struct Person {
             static let collectionName = "persons"
             static let email = "email"
+            
+        }
+        
+        struct VaccineRecord {
+            static let collectionName = "vaccines"
+            static let serialNum = "serialNum"
+            static let hadSecondDose = "hadSecondDose"
+            static let vaccinationLocation = "vaccinationLocation"
+            static let vaccineKind = "vaccineKind"
         }
     }
 }

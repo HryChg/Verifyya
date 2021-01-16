@@ -10,8 +10,8 @@ import Foundation
 
 struct Person {
     let email: String
-    let name: String
-    let address: String
-    let birthDate: Date
-    let vaccineRecord: VaccineRecord?
+//    let name: String
+//    let address: String
+//    let birthDate: Date
+//    let vaccineRecord: VaccineRecord?
 }

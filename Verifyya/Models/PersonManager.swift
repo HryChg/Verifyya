@@ -10,29 +10,41 @@ import Firebase
 
 class PersonManager {
     let db = Firestore.firestore()
-     
-    // TODO get user
-    func loadPerson() {
-        
-    }
+    let personConstants = K.FStore.Person.self
     
-    
-    func storePerson() {
-        if let email = Auth.auth().currentUser?.email {
-            db.collection(K.FStore.Person.collectionName).addDocument(data: [
-                K.FStore.Person.email: email
-            ]) { (error) in
-                if let e = error {
-                    print("There was an error saving person to firestore \(e.localizedDescription)")
-                } else {
-                    print("Successfully saved data.")
+    func getPerson(with Email: String, completetionHandler: @escaping (Result<Person, Error>)->Void) {
+        let personsRef = db.collection(personConstants.collectionName)
+        let query = personsRef.whereField(personConstants.email, isEqualTo: Email)
+        query.getDocuments { (querySnapShot, error) in
+            if let e = error {
+                completetionHandler(.failure(e))
+            } else {
+                guard querySnapShot?.documents.count == 1 else {
+                    fatalError("Duplciat Persons Found")
+                }
+                let data = querySnapShot!.documents[0].data()
+                if let email  = data[self.personConstants.email] as? String {
+                    let newPerson = Person(email: email)
+                    completetionHandler(.success(newPerson))
                 }
             }
         }
     }
     
     
-    // TODO register user
+    func storePerson(with email: String, completionHandler: @escaping (Result<Bool, Error>)->Void) {
+        db.collection(K.FStore.Person.collectionName).addDocument(data: [
+            K.FStore.Person.email: email
+        ]) { (error) in
+            if let e = error {
+                completionHandler(.failure(e))
+            } else {
+                completionHandler(.success(true))
+            }
+        }
+    }
+    
+    // TODO register user with a serial number for vaccine record
 }
 
 
