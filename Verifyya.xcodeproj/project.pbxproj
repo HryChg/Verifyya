@@ -3,19 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		223F6C47EAFB0BB8B7B323F4 /* Pods_Verifyya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */; };
 		9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616C12D25B26508009DF0D8 /* AppDelegate.swift */; };
 		9616C13025B26508009DF0D8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616C12F25B26508009DF0D8 /* SceneDelegate.swift */; };
 		9616C13225B26508009DF0D8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9616C13125B26508009DF0D8 /* ViewController.swift */; };
 		9616C13525B26508009DF0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9616C13325B26508009DF0D8 /* Main.storyboard */; };
 		9616C13725B2650D009DF0D8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9616C13625B2650D009DF0D8 /* Assets.xcassets */; };
 		9616C13A25B2650D009DF0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9616C13825B2650D009DF0D8 /* LaunchScreen.storyboard */; };
+		9616C14325B266B4009DF0D8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9616C14225B266B4009DF0D8 /* GoogleService-Info.plist */; };
+		96ACC05A25B2886D005C8EE5 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC05925B2886D005C8EE5 /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		323128DBCFBB89A4D884F2CC /* Pods-Verifyya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verifyya.release.xcconfig"; path = "Target Support Files/Pods-Verifyya/Pods-Verifyya.release.xcconfig"; sourceTree = "<group>"; };
+		64F24A867B203976ED8482AF /* Pods-Verifyya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Verifyya.debug.xcconfig"; path = "Target Support Files/Pods-Verifyya/Pods-Verifyya.debug.xcconfig"; sourceTree = "<group>"; };
 		9616C12A25B26508009DF0D8 /* Verifyya.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Verifyya.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9616C12D25B26508009DF0D8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9616C12F25B26508009DF0D8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,9 @@
 		9616C13625B2650D009DF0D8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9616C13925B2650D009DF0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9616C13B25B2650D009DF0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9616C14225B266B4009DF0D8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		96ACC05925B2886D005C8EE5 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				223F6C47EAFB0BB8B7B323F4 /* Pods_Verifyya.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				9616C12C25B26508009DF0D8 /* Verifyya */,
 				9616C12B25B26508009DF0D8 /* Products */,
+				BD3B35C7E0BD94B86E6DB9C2 /* Pods */,
+				CD3656CAAF779C7C5C9500B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +67,58 @@
 		9616C12C25B26508009DF0D8 /* Verifyya */ = {
 			isa = PBXGroup;
 			children = (
+				96ACC05825B2883B005C8EE5 /* Models */,
+				9616C14225B266B4009DF0D8 /* GoogleService-Info.plist */,
 				9616C12D25B26508009DF0D8 /* AppDelegate.swift */,
 				9616C12F25B26508009DF0D8 /* SceneDelegate.swift */,
-				9616C13125B26508009DF0D8 /* ViewController.swift */,
-				9616C13325B26508009DF0D8 /* Main.storyboard */,
+				96ACC05625B28820005C8EE5 /* Controllers */,
+				96ACC05725B2882D005C8EE5 /* Views */,
 				9616C13625B2650D009DF0D8 /* Assets.xcassets */,
-				9616C13825B2650D009DF0D8 /* LaunchScreen.storyboard */,
 				9616C13B25B2650D009DF0D8 /* Info.plist */,
 			);
 			path = Verifyya;
+			sourceTree = "<group>";
+		};
+		96ACC05625B28820005C8EE5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9616C13125B26508009DF0D8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		96ACC05725B2882D005C8EE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9616C13325B26508009DF0D8 /* Main.storyboard */,
+				9616C13825B2650D009DF0D8 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		96ACC05825B2883B005C8EE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96ACC05925B2886D005C8EE5 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BD3B35C7E0BD94B86E6DB9C2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				64F24A867B203976ED8482AF /* Pods-Verifyya.debug.xcconfig */,
+				323128DBCFBB89A4D884F2CC /* Pods-Verifyya.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CD3656CAAF779C7C5C9500B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +128,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9616C13E25B2650D009DF0D8 /* Build configuration list for PBXNativeTarget "Verifyya" */;
 			buildPhases = (
+				207C1727B766D8815AD73F01 /* [CP] Check Pods Manifest.lock */,
 				9616C12625B26508009DF0D8 /* Sources */,
 				9616C12725B26508009DF0D8 /* Frameworks */,
 				9616C12825B26508009DF0D8 /* Resources */,
+				4B54C6A60FA1E5F5480688E5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +181,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				9616C13A25B2650D009DF0D8 /* LaunchScreen.storyboard in Resources */,
+				9616C14325B266B4009DF0D8 /* GoogleService-Info.plist in Resources */,
 				9616C13725B2650D009DF0D8 /* Assets.xcassets in Resources */,
 				9616C13525B26508009DF0D8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		207C1727B766D8815AD73F01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Verifyya-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B54C6A60FA1E5F5480688E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Verifyya/Pods-Verifyya-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Verifyya/Pods-Verifyya-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Verifyya/Pods-Verifyya-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9616C12625B26508009DF0D8 /* Sources */ = {
@@ -139,6 +238,7 @@
 			files = (
 				9616C13225B26508009DF0D8 /* ViewController.swift in Sources */,
 				9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */,
+				96ACC05A25B2886D005C8EE5 /* UserModel.swift in Sources */,
 				9616C13025B26508009DF0D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +316,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -283,6 +383,7 @@
 		};
 		9616C13F25B2650D009DF0D8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64F24A867B203976ED8482AF /* Pods-Verifyya.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -301,6 +402,7 @@
 		};
 		9616C14025B2650D009DF0D8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 323128DBCFBB89A4D884F2CC /* Pods-Verifyya.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
