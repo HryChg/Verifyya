@@ -6,6 +6,16 @@
 //
 
 struct K {
+    struct Mock {
+        static let email = "123@gmail.com"
+        static let password = "123456"
+    }
+    
+    struct Segue {
+        static let logIn = "LogInToProfile"
+        static let signUp = "SignUpToProfile"
+    }
+    
     struct FStore {
         struct Person {
             static let collectionName = "persons"

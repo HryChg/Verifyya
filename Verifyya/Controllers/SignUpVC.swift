@@ -6,8 +6,12 @@
 //
 
 import UIKit
+import Firebase
 
 class SignUpVC: UIViewController {
+    
+    @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var passwordTextfield: UITextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,15 +19,18 @@ class SignUpVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func registerPressed(_ sender: UIButton) {
+        
+        if let email = emailTextfield.text, let password = passwordTextfield.text{
+            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+                if let e = error{
+                    // .localizedDescription contains only natural message from Firebase. This would also print out language depending on the location
+                    print(e.localizedDescription)
+                } else {
+                    // Navigate to the ChatViewController
+                    self.performSegue(withIdentifier: K.Segue.signUp, sender: self)
+                }
+            }
+        }
     }
-    */
-
 }
