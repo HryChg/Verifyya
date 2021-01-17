@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--InitalVC-->
+        <!--Inital-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="InitalVC" customClass="ViewController" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Inital" customClass="InitialVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -66,10 +66,10 @@
             </objects>
             <point key="canvasLocation" x="521.73913043478262" y="-444.64285714285711"/>
         </scene>
-        <!--LoginVC-->
+        <!--Login-->
         <scene sceneID="NvV-gO-1MT">
             <objects>
-                <viewController id="NP8-St-4y4" userLabel="LoginVC" sceneMemberID="viewController">
+                <viewController id="NP8-St-4y4" userLabel="Login" customClass="LoginVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2s5-S8-PgO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
         <!--Profile-->
         <scene sceneID="NaC-7y-nSz">
             <objects>
-                <viewController id="yED-iq-BEq" sceneMemberID="viewController">
+                <viewController id="yED-iq-BEq" customClass="ProfileVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sfi-q8-vtu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -170,7 +170,7 @@
         <!--Documents-->
         <scene sceneID="dqt-m3-3Zf">
             <objects>
-                <viewController id="Dd4-l1-fsw" sceneMemberID="viewController">
+                <viewController id="Dd4-l1-fsw" customClass="DocumentsVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lc2-en-IBo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,10 +183,10 @@
             </objects>
             <point key="canvasLocation" x="4612" y="281"/>
         </scene>
-        <!--QR Scanner-->
+        <!--QRScanner-->
         <scene sceneID="dHT-Yr-bXz">
             <objects>
-                <viewController id="2MY-OH-9Bn" customClass="QRScannerVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2MY-OH-9Bn" userLabel="QRScanner" customClass="QRScannerVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ivs-Q0-Sqt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,22 +248,22 @@
             </objects>
             <point key="canvasLocation" x="3823.188405797102" y="-580.58035714285711"/>
         </scene>
-        <!--SignupVC-->
+        <!--SignUp-->
         <scene sceneID="JLp-BY-aSR">
             <objects>
-                <viewController id="36T-Cn-kMR" userLabel="SignupVC" sceneMemberID="viewController">
+                <viewController id="36T-Cn-kMR" userLabel="SignUp" customClass="SignUpVC" customModule="Verifyya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pTc-Qu-BGg">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFill" misplaced="YES" axis="vertical" distribution="fillProportionally" alignment="center" spacing="96" translatesAutoresizingMaskIntoConstraints="NO" id="qm1-FS-su1">
-                                <rect key="frame" x="145" y="275" width="414" height="774"/>
+                                <rect key="frame" x="145" y="275" width="125" height="346.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="56" translatesAutoresizingMaskIntoConstraints="NO" id="BZT-ul-jAO">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="618"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="190.5"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="DbP-qg-Ny4">
-                                                <rect key="frame" x="158" y="0.0" width="98.5" height="60"/>
+                                                <rect key="frame" x="13.5" y="0.0" width="98.5" height="60"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="CWm-ZA-OFX"/>
                                                     <constraint firstAttribute="height" constant="60" id="Nf9-on-hdX"/>
@@ -272,7 +272,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PIi-gO-VMT">
-                                                <rect key="frame" x="130.5" y="116" width="153" height="502"/>
+                                                <rect key="frame" x="0.0" y="116" width="125" height="74.5"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="KEb-RY-a5K"/>
                                                     <constraint firstAttribute="width" constant="300" id="NhC-s4-XJ0"/>
@@ -283,7 +283,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FIG-Ni-yHm">
-                                        <rect key="frame" x="144.5" y="714" width="125" height="60"/>
+                                        <rect key="frame" x="0.0" y="286.5" width="125" height="60"/>
                                         <color key="backgroundColor" red="0.19005680080000001" green="0.4045391679" blue="0.54511636500000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="125" id="A0s-fx-sQ9"/>
