@@ -24,6 +24,7 @@
 		96ACC09225B2FC8B005C8EE5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC09125B2FC8B005C8EE5 /* Errors.swift */; };
 		96ACC0F725B401E1005C8EE5 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC0F625B401E1005C8EE5 /* QRScannerView.swift */; };
 		96ACC10125B40874005C8EE5 /* DatabaseAPIExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC10025B40874005C8EE5 /* DatabaseAPIExamples.swift */; };
+		96ACC10725B40A4F005C8EE5 /* QRScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC10625B40A4F005C8EE5 /* QRScannerVC.swift */; };
 		C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		96ACC09125B2FC8B005C8EE5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
 		96ACC0F625B401E1005C8EE5 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		96ACC10025B40874005C8EE5 /* DatabaseAPIExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIExamples.swift; sourceTree = "<group>"; };
+		96ACC10625B40A4F005C8EE5 /* QRScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerVC.swift; sourceTree = "<group>"; };
 		C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
 		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				9616C13125B26508009DF0D8 /* ViewController.swift */,
+				96ACC10625B40A4F005C8EE5 /* QRScannerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				96ACC10125B40874005C8EE5 /* DatabaseAPIExamples.swift in Sources */,
 				9616C13225B26508009DF0D8 /* ViewController.swift in Sources */,
 				96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */,
+				96ACC10725B40A4F005C8EE5 /* QRScannerVC.swift in Sources */,
 				9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */,
 				96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */,
 				96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */,

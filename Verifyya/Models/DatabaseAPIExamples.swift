@@ -6,8 +6,12 @@
 //
 
 import Foundation
+import Firebase
 
 class DatabseAPIExamples {
+    let personManager = PersonManager.shared
+    let vaccineManager = VaccineManager.shared
+    
     init () {
         let email = "123@gmail.com"
         Auth.auth().signIn(withEmail: email, password: "123456") { [weak self] authResult, error in
