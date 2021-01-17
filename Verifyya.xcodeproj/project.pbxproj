@@ -21,9 +21,10 @@
 		96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC07925B29E7C005C8EE5 /* K.swift */; };
 		96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */; };
 		96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */; };
-		C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */; };
-		C4B10ED425B2FCB3006A69F0 /* QRManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ED325B2FCB3006A69F0 /* QRManager.swift */; };
 		96ACC09225B2FC8B005C8EE5 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC09125B2FC8B005C8EE5 /* Errors.swift */; };
+		96ACC0F725B401E1005C8EE5 /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC0F625B401E1005C8EE5 /* QRScannerView.swift */; };
+		96ACC10125B40874005C8EE5 /* DatabaseAPIExamples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC10025B40874005C8EE5 /* DatabaseAPIExamples.swift */; };
+		C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +57,10 @@
 		96ACC07925B29E7C005C8EE5 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineRecord.swift; sourceTree = "<group>"; };
 		96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VaccineManager.swift; sourceTree = "<group>"; };
-		C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
-		C4B10ED325B2FCB3006A69F0 /* QRManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRManager.swift; sourceTree = "<group>"; };
 		96ACC09125B2FC8B005C8EE5 /* Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		96ACC0F625B401E1005C8EE5 /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		96ACC10025B40874005C8EE5 /* DatabaseAPIExamples.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseAPIExamples.swift; sourceTree = "<group>"; };
+		C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
 		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -130,6 +132,7 @@
 		96ACC05725B2882D005C8EE5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				96ACC0F625B401E1005C8EE5 /* QRScannerView.swift */,
 				9616C13325B26508009DF0D8 /* Main.storyboard */,
 				9616C13825B2650D009DF0D8 /* LaunchScreen.storyboard */,
 			);
@@ -144,7 +147,7 @@
 				96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */,
 				96ACC08725B2BA48005C8EE5 /* VaccineManager.swift */,
 				C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */,
-				C4B10ED325B2FCB3006A69F0 /* QRManager.swift */,
+				96ACC10025B40874005C8EE5 /* DatabaseAPIExamples.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -327,16 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96ACC10125B40874005C8EE5 /* DatabaseAPIExamples.swift in Sources */,
 				9616C13225B26508009DF0D8 /* ViewController.swift in Sources */,
 				96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */,
 				9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */,
 				96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */,
 				96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */,
 				96ACC07A25B29E7C005C8EE5 /* K.swift in Sources */,
-				C4B10ED425B2FCB3006A69F0 /* QRManager.swift in Sources */,
 				96ACC05D25B29592005C8EE5 /* PersonManager.swift in Sources */,
 				C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */,
 				96ACC09225B2FC8B005C8EE5 /* Errors.swift in Sources */,
+				96ACC0F725B401E1005C8EE5 /* QRScannerView.swift in Sources */,
 				9616C13025B26508009DF0D8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FRT26578B;
 				INFOPLIST_FILE = Verifyya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -521,6 +526,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3FRT26578B;
 				INFOPLIST_FILE = Verifyya/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
