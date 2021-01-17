@@ -29,6 +29,7 @@
 		96ACC12E25B41A6D005C8EE5 /* DocumentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC12C25B41A6C005C8EE5 /* DocumentsVC.swift */; };
 		96ACC12F25B41A6D005C8EE5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC12D25B41A6C005C8EE5 /* ProfileVC.swift */; };
 		96ACC13325B41ACB005C8EE5 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC13225B41ACB005C8EE5 /* SignUpVC.swift */; };
+		96ACC13D25B424EF005C8EE5 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96ACC13C25B424EF005C8EE5 /* QRGenerator.swift */; };
 		C4B10ECE25B2FBFF006A69F0 /* WalletManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		96ACC12C25B41A6C005C8EE5 /* DocumentsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DocumentsVC.swift; sourceTree = "<group>"; };
 		96ACC12D25B41A6C005C8EE5 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		96ACC13225B41ACB005C8EE5 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		96ACC13C25B424EF005C8EE5 /* QRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
 		C4B10ECD25B2FBFF006A69F0 /* WalletManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletManager.swift; sourceTree = "<group>"; };
 		E0A5F4D96240291382018FEB /* Pods_Verifyya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Verifyya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,6 +159,7 @@
 		96ACC05825B2883B005C8EE5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				96ACC13C25B424EF005C8EE5 /* QRGenerator.swift */,
 				96ACC05925B2886D005C8EE5 /* Person.swift */,
 				96ACC05C25B29592005C8EE5 /* PersonManager.swift */,
 				96ACC08125B2B54E005C8EE5 /* VaccineRecord.swift */,
@@ -351,6 +354,7 @@
 				96ACC08225B2B54E005C8EE5 /* VaccineRecord.swift in Sources */,
 				96ACC12F25B41A6D005C8EE5 /* ProfileVC.swift in Sources */,
 				96ACC10725B40A4F005C8EE5 /* QRScannerVC.swift in Sources */,
+				96ACC13D25B424EF005C8EE5 /* QRGenerator.swift in Sources */,
 				9616C12E25B26508009DF0D8 /* AppDelegate.swift in Sources */,
 				96ACC08825B2BA48005C8EE5 /* VaccineManager.swift in Sources */,
 				96ACC05A25B2886D005C8EE5 /* Person.swift in Sources */,
