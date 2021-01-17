@@ -28,7 +28,7 @@ class SignUpVC: UIViewController {
                     print(e.localizedDescription)
                 } else {
                     // Navigate to the ChatViewController
-                    self.performSegue(withIdentifier: K.Segue.signUp, sender: self)
+                    self.performSegue(withIdentifier: K.Segue.signUpToProfile, sender: self)
                 }
             }
         }

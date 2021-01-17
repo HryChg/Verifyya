@@ -47,7 +47,8 @@
                                             <color key="titleColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <segue destination="NP8-St-4y4" kind="show" id="Xc3-Og-BMA"/>
+                                            <action selector="logInPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ML0-bj-Ddn"/>
+                                            <segue destination="NP8-St-4y4" kind="show" identifier="goToLogin" id="Xc3-Og-BMA"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,7 +84,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gm6-7K-LEJ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="155"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1BB-BJ-JJi">
+                                                    <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="123@gmail.com" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1BB-BJ-JJi">
                                                         <rect key="frame" x="57" y="47.5" width="300" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="3vh-tV-AOm"/>
@@ -103,14 +104,14 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lgg-ua-SVB">
                                                 <rect key="frame" x="0.0" y="205" width="414" height="182"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrJ-yT-wW6">
+                                                    <textField opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WrJ-yT-wW6">
                                                         <rect key="frame" x="57" y="61" width="300" height="60"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="300" id="XLh-Yq-KPC"/>
                                                             <constraint firstAttribute="height" constant="60" id="fhz-r6-6of"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                                     </textField>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -145,7 +146,8 @@
                                                     <color key="titleColor" red="0.92156862750000001" green="0.92156862750000001" blue="0.92156862750000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 </state>
                                                 <connections>
-                                                    <segue destination="EPx-kc-ofH" kind="show" id="Gag-jz-heS"/>
+                                                    <action selector="loginPressed:" destination="NP8-St-4y4" eventType="touchUpInside" id="eHR-pM-pcf"/>
+                                                    <segue destination="EPx-kc-ofH" kind="show" identifier="LogInToProfile" id="Gag-jz-heS"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -180,6 +182,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5yC-Z3-5dx"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="1BB-BJ-JJi" id="rac-Y0-4ZM"/>
+                        <outlet property="passwordTextfield" destination="WrJ-yT-wW6" id="lKc-jf-GcO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n2m-Yg-eEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

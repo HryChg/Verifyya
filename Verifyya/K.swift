@@ -12,8 +12,9 @@ struct K {
     }
     
     struct Segue {
-        static let logIn = "LogInToProfile"
-        static let signUp = "SignUpToProfile"
+        static let logInToProfile = "LogInToProfile"
+        static let signUpToProfile = "SignUpToProfile"
+        static let goToLogin = "goToLogin"
     }
     
     struct FStore {

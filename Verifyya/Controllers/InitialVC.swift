@@ -11,4 +11,7 @@ class InitialVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func logInPressed(_ sender: UIButton) {
+        self.performSegue(withIdentifier: K.Segue.goToLogin, sender: self)
+    }
 }
